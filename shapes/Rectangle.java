@@ -1,3 +1,5 @@
+ 
+
 import java.awt.*;
 
 /**
@@ -33,6 +35,31 @@ public class Rectangle{
     }
     
 
+    /**
+     * Metodo que cambia la posicion de un rectangulo 
+     */
+    public void changePosition(int _x, int _y){
+        xPosition = _x;
+        yPosition = _y;
+    }
+    
+    /**
+     * Metodo que arma un rectangulo
+     * @param h, height of the rectangle
+     * @param w, width of the rectangle
+     * @param x, x position of the rectangle
+     * @param y, y position of the rectangle
+     */
+    public void armarRectangle(int h, int w, int x, int y){
+        this.height = h;
+        this.width = w;
+        this.xPosition= x;
+        this.yPosition = y;
+        
+        this.color = "green";
+        
+    }
+    
     /**
      * Make this rectangle visible. If it was already visible, do nothing.
      */
