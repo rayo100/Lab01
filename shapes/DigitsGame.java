@@ -1,10 +1,10 @@
 
 import java.util.Random;
 /**
- * Write a description of class DigitsGame here.
+ * .
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Edgar Henao - Cesar Vasquez) 
+ * @version 1.0(August 26, 2021)
  */
 public class DigitsGame
 {
@@ -44,6 +44,7 @@ public class DigitsGame
      * different of the red Digit position
      * @param row, row of the Digit
      * @param column, column of the Digit 
+     * @param N, N is the size of the board
      */
     public int[] generateAleatoryHoleDigitPosition(int row,int column,int N){ 
         Random rand = new Random();
@@ -55,5 +56,11 @@ public class DigitsGame
         }
         int positions[] = {rowHole,columnHole};
         return positions;
+    }
+    /**
+     * Generate a board of NxN for the game
+     */
+    public void initialConfigurationBoard(int N){
+        
     }
 }

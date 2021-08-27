@@ -38,9 +38,9 @@ public class Rectangle{
     /**
      * Metodo que cambia la posicion de un rectangulo 
      */
-    public void changePosition(int _x, int _y){
-        xPosition = _x;
-        yPosition = _y;
+    public void changePosition(int x, int y){
+        xPosition = x;
+        yPosition = y;
     }
     
     /**
@@ -50,7 +50,7 @@ public class Rectangle{
      * @param x, x position of the rectangle
      * @param y, y position of the rectangle
      */
-    public void armarRectangle(int h, int w, int x, int y){
+    public void modRectangle(int h, int w, int x, int y){
         this.height = h;
         this.width = w;
         this.xPosition= x;
